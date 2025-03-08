@@ -13,14 +13,10 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 sh './terraform-run.sh init'
-
+                sh 'rm -rf .terraform .terraform.lock.hcl'
             }
         }
-        stage('Terraform Plan') {
-            steps {
-                sh 'ls -ltr'
-            }
-        }
+   
         stage('Terraform Apply') {
             steps {
                 // Se recomienda confirmar manualmente en entornos de producción.
