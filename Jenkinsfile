@@ -12,18 +12,18 @@ pipeline {
         }
         stage('Terraform Init') {
             steps {
-                sh 'terraform init'
+                sh 'cd terraform'
             }
         }
         stage('Terraform Plan') {
             steps {
-                sh 'terraform plan'
+                sh 'pwd'
             }
         }
         stage('Terraform Apply') {
             steps {
                 // Se recomienda confirmar manualmente en entornos de producción.
-                sh 'terraform apply -auto-approve'
+               // sh 'terraform apply -auto-approve'
             }
         }
     }
