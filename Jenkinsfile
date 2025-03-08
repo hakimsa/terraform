@@ -24,6 +24,7 @@ pipeline {
             steps {
                 // Se recomienda confirmar manualmente en entornos de producción.
                // sh 'terraform apply -auto-approve'
+               sh'git pull'
             }
         }
     }
