@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Terraform Init') {
             steps {
-                sh 'cd terraform'
+                sh 'pwd'
             }
         }
         stage('Terraform Plan') {
