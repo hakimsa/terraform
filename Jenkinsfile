@@ -21,7 +21,7 @@ pipeline {
             steps {
                 // Se recomienda confirmar manualmente en entornos de producción.
                // sh './terraform-run.sh apply -auto-approve'
-               sh'------------------------------------------------------------------------------------'
+               sh 'echo ------------------------------------------------------------------------------------'
                sh './terraform-run.sh  plan'
          
             }
