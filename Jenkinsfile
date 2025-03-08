@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Terraform Plan') {
             steps {
-                sh 'pwd'
+                sh 'ls -ltr'
             }
         }
         stage('Terraform Apply') {
