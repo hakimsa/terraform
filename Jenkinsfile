@@ -20,7 +20,7 @@ pipeline {
         stage('Terraform Apply') {
             steps {
                 // Se recomienda confirmar manualmente en entornos de producción.
-              sh './terraform-run.sh apply -auto-approve'
+              sh './terraform-run.sh apply'
                sh 'echo ------------------------------------------------------------------------------------'
              
          
