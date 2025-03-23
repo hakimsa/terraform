@@ -21,7 +21,7 @@ time.sleep(5)
 
 # Buscar productos en la página
 productos = []
-productos_elements = driver.find_elements(By.CLASS_NAME, "products")
+productos_elements = driver.find_elements(By.CLASS_NAME, "product-items")
 
 for item in productos_elements:
     try:

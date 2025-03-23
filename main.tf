@@ -17,7 +17,7 @@ resource "docker_image" "ubuntu" {
 }
 
 # Create a container
-resource "docker_container" "foo" {
-  image = docker_image.ubuntu.image_id
-  name  = "foo"
+resource "docker_container" "myapp" {
+  image =  hakimsamouh/myopss:latest
+  name  = "myapplic"
 }
